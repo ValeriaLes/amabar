@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, serif; 
+    line-height: 1.5;
+    position: relative;
+   
+    
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header*/
+.header {
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); */
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px;
+    height: 100px;
+}
+
+.header .nav {
+    margin: 0 auto;
+    
+}
+
+.header .nav ul {
+    list-style: none;
+    display: flex;
+   
+}
+
+.header .nav ul li {
+    margin: 0 1rem;
+    
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.header .nav ul li a:hover {
+   
+    color: rgba(255, 255, 255, 0.5);
+      
+}
+
+
+
+/* Hero Section */
+ .hero {
+    width: 100%;
+    height: calc(100vh - 130px);
+    background: url('./images/bg-img2.jpg') no-repeat center/cover;
+    background-position: top center ; 
+     background-size: cover;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); 
+    position: relative;
+    filter: brightness(90%);
+    /* margin-top: 76px; */
+}
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); */
+    z-index: 1;
+}
+
+
+.hero-content {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+} 
+
+.hero-title {
+    font-family: 'Playfair Display', serif; 
+    font-size: 3rem; 
+    font-weight: 700; 
+    color: rgba(255, 255, 255, 0.8); 
+    text-align: center; 
+    text-transform: uppercase;
+    letter-spacing: 0.2rem; 
+    
+    -webkit-text-stroke: 2px white; 
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.4); 
+    
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+
+.hero-description {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+    font-size: 1.2rem;
+    text-transform: lowercase;
+    font-style: italic;
+}
+
+.hero-description span::after {
+    content: "•"; 
+    margin-left: 0.5rem; 
+}
+
+.hero-description span:last-child::after {
+    content: "";
+}
+
+/* OPENING HOURS ABSOLUTE */
+
+.opening-hours .circle {
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(108%, -253%);
+    width: 250px; 
+    height: 250px; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .opening-hours h3 {
+    
+    margin-bottom: 13px;
+    color: #000;
+  }
+  
+  .opening-hours p {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 5px 0;
+    
+  }
+  
+  .opening-hours .circle p strong {
+    color: #000; /* Bold the day/time labels */
+  }
+
+/* FOOTER */
+
+.footer-container {
+    padding: 15px;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
+    color: #fff;
+    width: 100%;
+    height: 130px;
+}
+.footer {
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 15px;
+    
+  }
+.address, .contact-phone, .contact-mail {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.social-media-list {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+
+
+  .social-list-item {
+    display: flex;
+    border-radius: 50%;
+    padding: 8px; 
+    transition: all 0.3s ease; 
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 10%, rgba(204, 204, 204, 0.5) 70%, white 100%);
+  }
+  .social-list-item a {
+    display: inline-block;
+    
+  }
+  
+  .social-list-item:hover {
+    border-color: #ccc;
+    background-color: #f0f0f0; 
+  }
+
+  .social-list-item img {
+    width: 30px; /* Adjust size of the icons */
+    height: 30px;
+    display: block;
+  }
