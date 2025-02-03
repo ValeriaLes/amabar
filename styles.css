@@ -8,6 +8,9 @@ body {
     font-family: Arial, serif; 
     line-height: 1.5;
     position: relative;
+    background: url('./images/hero.sec.jpg') no-repeat ;
+    background-position: top center ; 
+     background-size: 1200px auto;
    
     
 }
@@ -17,47 +20,71 @@ a {
 }
 
 /* Header*/
-.header {
-    background: rgba(0, 0, 0, 0.3);
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    /* background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)); */
+
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
 }
 
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 26px;
-    height: 100px;
-}
 
-.header .nav {
-    margin: 0 auto;
-    
-}
+@media screen and (min-width: 1200px) {
 
-.header .nav ul {
-    list-style: none;
-    display: flex;
+
+    .container {
+        max-width: 1200px;
+        width: 1200px;
+        margin: 0 auto;
+        
+    }
+
+    .nav {
+        margin: 0 auto;
+        background: rgba(0, 0, 0, 0.3);
+        color: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+        max-width: 800px;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+
+    .nav-list {
+        padding: 26px;
+        height: 100px;
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-list-item {
+        margin: 0 1rem;
+    }
+
    
-}
-
-.header .nav ul li {
-    margin: 0 1rem;
+    .nav-list-item-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+    }
     
 }
 
-.header .nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
+
+
+
+
+
+
+
+
 
 .header .nav ul li a:hover {
    
@@ -70,10 +97,11 @@ a {
 /* Hero Section */
  .hero {
     width: 100%;
-    height: calc(100vh - 130px);
-    background: url('./images/bg-img2.jpg') no-repeat center/cover;
+    /* height: calc(100vh - 130px); */
+    height: 100vh;
+    /* background: url('./images/hero.sec.jpg') no-repeat ;
     background-position: top center ; 
-     background-size: cover;
+     background-size: 1200px auto; */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -84,6 +112,7 @@ a {
     filter: brightness(90%);
     /* margin-top: 76px; */
 }
+
 .hero::before {
     content: '';
     position: absolute;
@@ -91,7 +120,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.3); 
     /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)); */
     z-index: 1;
 }
@@ -109,7 +138,6 @@ a {
 
 .hero-title {
     font-family: 'Playfair Display', serif; 
-    font-size: 3rem; 
     font-weight: 700; 
     color: rgba(255, 255, 255, 0.8); 
     text-align: center; 
@@ -120,6 +148,26 @@ a {
     -webkit-text-fill-color: rgba(255, 255, 255, 0.4); 
     
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+}
+.hero-subtitle{
+    font-size: 2rem; 
+    text-align: center;
+}
+.hero-logo{
+    font-size: 4rem; 
+    position: relative;
+}
+.hero-logo-bar {
+    font-family: 'Allura', cursive;
+    font-size: 85px;
+    position: absolute;
+    font-style: italic;
+    text-transform: lowercase;
+    -webkit-text-fill-color: #FF3B2E;
+    -webkit-text-stroke: 2px #FF3B2E; 
+    top: 20%;
+    right: -38%;
+    font-weight: 400;
 }
 
 .hero-description {
@@ -145,12 +193,12 @@ a {
 
 .opening-hours .circle {
     position: absolute;
-    top: 50%;  
+    top: 76%;  
     left: 50%; 
     transform: translate(108%, -253%);
     width: 250px; 
     height: 250px; 
-    background-color: rgba(255, 255, 255, 0.2); 
+    background-color: rgba(255, 255, 255, 0.5); 
     border-radius: 50%; 
     display: flex;
     flex-direction: column;
@@ -182,11 +230,23 @@ a {
 
 .footer-container {
     padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
 
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3));
+
+
+    bottom: 0; /* Stellt sicher, dass der Footer am unteren Rand bleibt */
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000; 
+
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.3)); */
     color: #fff;
     width: 100%;
     height: 130px;
+    margin: 0 auto;
+    max-width: 100%;
 }
 .footer {
 
