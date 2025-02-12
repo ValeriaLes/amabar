@@ -1,0 +1,180 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: #121212; */
+    color: white;
+    background-image:url("../images/test-bg.jpg");
+    background-size: cover;
+  
+    text-align: center;
+    
+    position: relative;
+    font-family: Arial, serif; 
+}
+
+body::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5); /* Dunkles Overlay mit 50% Transparenz */
+z-index: -1;
+}
+
+/* .container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+/* .box {
+    width: 40%;
+    margin: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+} */
+/* 
+.box img {
+    width: 100%;
+    border-radius: 10px;
+} */
+
+.text {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    width: 60%;
+}
+
+/* Chaotische Positionierung */
+.box:nth-child(odd) .text {
+    left: -150px;
+}
+
+.box:nth-child(even) .text {
+    right: -150px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .nav-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+    .container {
+        max-width: 1200px;
+        width: 1200px;
+        margin: 0 auto;
+        
+    }
+    .header-container {
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    .nav {
+        margin: 0 auto;
+       
+        color: #fff;
+        /* position: fixed; */
+        top: 0;
+        z-index: 1000;
+        max-width: 800px;
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+
+    .nav-list {
+        padding: 26px;
+        height: 100px;
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-list-item {
+        margin: 0 1rem;
+    }
+
+   
+    .nav-list-item-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        transition: color 0.3s ease;
+        font-weight: 700;
+    }
+
+    .active {
+        color: #FF0000;
+        border-bottom: 2px solid #FF0000;
+    }
+
+  
+    
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap; /* Erlaubt den Umbruch der Bilder in die nächste Zeile */
+    gap: 10px; 
+    width: 500px;
+    margin-top: 100px;
+    border: 2px solid white;
+    justify-content: center;
+    position: relative;
+
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+.arrow {
+    position: absolute;
+    bottom: 45px; /* Der Pfeil startet leicht außerhalb des Containers nach unten */
+    right: -2px;  /* Der Pfeil startet leicht außerhalb des Containers nach rechts */
+    width: 2px;    /* Dünne Linie für den vertikalen Teil */
+    height: 200px;  /* Länge des vertikalen Teils des Pfeils */
+    background-color: white; /* Farbe des Pfeils */
+    transform-origin: bottom right;  /* Der Ursprung der Drehung ist die untere rechte Ecke */
+    transform: rotate(45deg);  /* Der Pfeil dreht sich nach oben rechts */
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 0;  /* Startet an der Basis des vertikalen Teils */
+    left: 0;
+    width: 2px;  /* Länge des vertikalen Teils des Pfeils */
+    height: 200px;  /* Höhe des vertikalen Teils des Pfeils */
+    background-color: white; /* Pfeil-Farbe */
+    transform-origin: top left; /* Der Ursprung der Drehung ist die obere linke Ecke */
+    transform: rotate(225deg);  /* Der Pfeil dreht sich vertikal nach rechts */
+}
