@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <script src="../main.js" refer></script>
    
     <link rel="stylesheet" href="./about.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
       rel="stylesheet"
     />
 
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 </head>
 <body>
     <header class="page-header">
@@ -33,47 +42,59 @@
     
 </head>
 <body>
-    <p>Erlebe Drinks, Games, Karaoke und Shisha in einzigartiger Atmosphäre!</p>
+    <!-- <p>Experience drinks, games, karaoke, and shisha in a unique atmosphere!</p> -->
 
     <div class="container">
 
         <div class="box">
-           <div class="image-container">
-            <div class="arrow"></div>
-            <img src="../images/bg-img2.jpg" alt="Drinks" width="200" height="200">
-            <img src="../images/bg-img2.jpg" alt="" width="200" height="200">
-            <img src="../images/bg-img2.jpg" alt="" width="200" height="200">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/drink.jpg" alt="Drinks"></div>
+                    <div class="swiper-slide"><img src="../images/drink2.jpg" alt="Drinks"></div>
+                    <div class="swiper-slide"><img src="../images/bg-img2.jpg" alt="Drinks"></div>
+                </div>
+            
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            
+                <!-- Pagination (optional) -->
+                <div class="swiper-pagination"></div>
+            </div>
+           <div class="drinks-container">
+            <h3 class="title">Drinks</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloremque autem atque inventore illo officia velit ducimus ab! Perferendis quod delectus quisquam architecto eius saepe, dolores tempora esse necessitatibus maxime?</p>
            </div>
-            <div class="text">
-                <h2>🍹 Drinks</h2>
-                <p>Genieße erstklassige Cocktails und erfrischende Getränke.</p>
-            </div>
+           
         </div>
-
         <div class="box">
-            <div class="text">
-                <h2>🎮 Play</h2>
-                <p>Zocke mit deinen Freunden auf den besten Gaming-Konsolen.</p>
+            <div class="drinks-container">
+                <h3 class="title">Karaoke</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloremque autem atque inventore illo officia velit ducimus ab! Perferendis quod delectus quisquam architecto eius saepe, dolores tempora esse necessitatibus maxime?</p>
+               </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../images/shisha.jpg" alt="Drinks"></div>
+                    <div class="swiper-slide"><img src="../images/shisha2.jpg" alt="Drinks"></div>
+                    <div class="swiper-slide"><img src="../images/bg-img2.jpg" alt="Drinks"></div>
+                </div>
+            
+                <!-- Navigation buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            
+                <!-- Pagination (optional) -->
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- <img src="../images/shisha.jpg" alt="Gaming"> -->
+           
            
         </div>
 
-        <div class="box">
-            <!-- <img src="../images/shisha2.jpg" alt="Karaoke"> -->
-            <div class="text">
-                <h2>🎤 Sing</h2>
-                <p>Zeig dein Gesangstalent und rocke die Bühne in unseren Karaoke-Nächten.</p>
-            </div>
-        </div>
 
-        <div class="box">
-            <div class="text">
-                <h2>💨 Smoke</h2>
-                <p>Entspanne mit Premium-Shisha in unserer gemütlichen Lounge.</p>
-            </div>
-            <!-- <img src="../images/hero-removebg.png" alt="Shisha"> -->
-        </div>
+   
+           
+
+      
 
       
     

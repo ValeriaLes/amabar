@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: white;
-    background-image:url("../images/IMG_9583.JPG");
+    /* background-image:url("../images/IMG_9583.JPG"); */
     background-size: 70%;
   
     text-align: center;
@@ -117,4 +117,8 @@ z-index: -1;
 
 .gallery-item:hover {
     transform: scale(1.1);
+}
+
+.swiper-button-next {
+    background-color: yellow;
 }
