@@ -883,3 +883,7 @@ flex-direction: column}
   line-height: 2;
   text-transform: uppercase;
 }
+
+.active-mobile {
+  color: #ff0000;
+}
