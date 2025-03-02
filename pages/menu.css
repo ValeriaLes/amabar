@@ -1,8 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body {
     font-family: Arial, sans-serif;
@@ -94,10 +90,7 @@ z-index: -1;
     
 }
 
-/* .img-container {
-    display: flex;
-    flex-direction: column;
-} */
+
 
 .gallery {
     display: flex;
@@ -122,3 +115,9 @@ z-index: -1;
 .swiper-button-next {
     background-color: yellow;
 }
+
+
+
+
+
+
