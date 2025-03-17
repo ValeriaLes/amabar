@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="../styles.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="contact-bg">
+      <header class="page-header">
+        <div class="container header-container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="../index.html" class="nav-list-item-link">Home</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./pages/about.html" class="nav-list-item-link active"
+                  >About</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="./menu.html" class="nav-list-item-link">Menu</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#gallery" class="nav-list-item-link">Gallery</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#events" class="nav-list-item-link">Events</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#contact" class="nav-list-item-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- BURGER MENU -->
+          <button
+            type="button"
+            class="mobile-menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <img
+              src="../images/burger-menu.svg"
+              alt="mobile-menu-button"
+              width="35"
+              height="35"
+            />
+          </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <div class="mobile-container">
+            <button type="button" class="mobile-close-btn js-close-menu">
+              <img
+                src="../images/close-mobile-btn.svg"
+                alt="close-menu-button"
+                class="close-menu-svg"
+              />
+            </button>
+            <ul class="mobile-list list">
+              <li class="mobile-list-item">
+                <a href="../index.html">Home</a>
+              </li>
+              <li class="mobile-list-item">
+                <a href="./about.html" class="active-mobile">About</a>
+              </li>
+              <li class="mobile-list-item">
+                <a href="./menu.html">Menu</a>
+              </li>
+              <li class="mobile-list-item"><a href="">Gallery</a></li>
+              <li class="mobile-list-item"><a href="">Events</a></li>
+              <li class="mobile-list-item"><a href="">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="contact-section">
+          <div class="container">
+            <div class="contact-box">
+              <div class="contact-phone-contact">
+                <div>
+                  <img
+                    src="../images/phone.svg"
+                    alt="phone-svg"
+                    class="icon-phone"
+                  />
+                </div>
+                <div>
+                  <a href="tel:+420739866996">+420 739 866 996</a>
+                </div>
+              </div>
+              <div class="contact-mail-contact">
+                <div>
+                  <img
+                    src="../images/mail.svg"
+                    alt="mail-svg"
+                    class="icon-mail"
+                  />
+                </div>
+                <div>
+                  <a href="mailto:amabar.s.r.o@gmail.com"
+                    >amabar.s.r.o@gmail.com</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="map-box">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.123456789!2d12.87123456789!3d50.230987654321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470abc1234567890%3A0xabcdef123456789!2sSokolovsk%C3%A1%20116%2F71%2C%2036005%20Karlovy%20Vary%2C%20Tschechien!5e0!3m2!1sde!2s!4v1700000000000"
+                width="100%"
+                height="200"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+              >
+              </iframe>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container footer-container">
+          <div class="address">
+            <div>
+              <img src="../images/address.svg" alt="address-svg" />
+            </div>
+            <div>
+              <p>Sokolovská 116 / 71</p>
+              <p>Karlovy Vary 36005</p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="contact-phone">
+              <div>
+                <img src="../images/phone.svg" alt="phone-svg" />
+              </div>
+              <div>
+                <a href="tel:+420739866996">+420 739 866 996</a>
+              </div>
+            </div>
+            <div class="contact-mail">
+              <div>
+                <img src="../images/mail.svg" alt="mail-svg" />
+              </div>
+              <div>
+                <p>
+                  <a href="mailto:amabar.s.r.o@gmail.com"
+                    >amabar.s.r.o@gmail.com</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="social-media">
+            <ul class="social-media-list">
+              <li class="social-list-item">
+                <a href="https://www.instagram.com/ama_bar_kv/" target="_blank">
+                  <img src="../images/insta.svg" alt="insta-icon" />
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href="www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
+                  target="_blank"
+                >
+                  <img src="../images/facebook.svg" alt="facebook-icon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
