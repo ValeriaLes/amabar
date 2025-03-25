@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AmaBar</title>
-    
+
     <link rel="stylesheet" href="./styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
@@ -18,167 +18,189 @@
   </head>
   <body>
     <div class="home-background">
-
       <!-- HEADER  -->
 
-    <header class="header">
-      <div class="container header-container">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a href="./index.html" class="nav-list-item-link active">Home</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./pages/about.html" class="nav-list-item-link">About</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./pages/menu.html" class="nav-list-item-link">Menu</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#gallery" class="nav-list-item-link">Gallery</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="./pages/events.html" class="nav-list-item-link">Events</a>
-            </li>
-            <li class="nav-list-item">
-              <a href="#contact" class="nav-list-item-link">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <header class="header">
+        <div class="container header-container">
+          <nav class="nav">
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a href="./index.html" class="nav-list-item-link active"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="./pages/about.html" class="nav-list-item-link"
+                  >About</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="./pages/menu.html" class="nav-list-item-link">Menu</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="#gallery" class="nav-list-item-link">Gallery</a>
+              </li>
+              <li class="nav-list-item">
+                <a href="./pages/events.html" class="nav-list-item-link"
+                  >Events</a
+                >
+              </li>
+              <li class="nav-list-item">
+                <a href="#contact" class="nav-list-item-link">Contact</a>
+              </li>
+            </ul>
+          </nav>
 
-        <!-- BURGER BUTTON  -->
-        <button
-          type="button"
-          class="mobile-menu-open js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <img src="./images/burger-menu.svg" alt="mobile-menu-button" width="35" height="35" />
-        </button>
-      </div>
-
-      <!-- MOBILE MENU  -->
-
-      <div class="mobile-menu js-menu-container" id="mobile-menu">
-        <div class="mobile-container">
-          <button type="button" class="mobile-close-btn js-close-menu">
+          <!-- BURGER BUTTON  -->
+          <button
+            type="button"
+            class="mobile-menu-open js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
             <img
-              src="./images/close-mobile-btn.svg"
-              alt="close-menu-button"
-              class="close-menu-svg"
+              src="./images/burger-menu.svg"
+              alt="mobile-menu-button"
+              width="35"
+              height="35"
             />
           </button>
-          <ul class="mobile-list list">
-            <li class="mobile-list-item">
-              <a href="./index.html" class="active-mobile">Home</a>
-            </li>
-            <li class="mobile-list-item">
-              <a href="./pages/about.html">About</a>
-            </li>
-            <li class="mobile-list-item">
-              <a href="./pages/menu.html">Menu</a>
-            </li>
-            <li class="mobile-list-item"><a href="">Gallery</a></li>
-            <li class="mobile-list-item"><a href="./pages/events.html">Events</a></li>
-            <li class="mobile-list-item"><a href="./pages/contact.html">Contact</a></li>
-          </ul>
         </div>
-      </div>
-    </header>
-    <main>
-      <!-- HERO SECTION -->
 
-      <section class="hero">
-        <div class="container">
-          <div class="hero-content">
-            <h1 class="hero-title">
-              <span class="hero-subtitle">Welcome to</span>
+        <!-- MOBILE MENU  -->
 
-              <div class="logo-circle">
-                <span class="hero-logo"
-                  >Ama <span class="hero-logo-bar">Bar</span></span
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
+          <div class="mobile-container">
+            <button type="button" class="mobile-close-btn js-close-menu">
+              <img
+                src="./images/close-mobile-btn.svg"
+                alt="close-menu-button"
+                class="close-menu-svg"
+              />
+            </button>
+            <ul class="mobile-list list">
+              <li class="mobile-list-item">
+                <a href="./index.html" class="active-mobile">Home</a>
+              </li>
+              <li class="mobile-list-item">
+                <a href="./pages/about.html">About</a>
+              </li>
+              <li class="mobile-list-item">
+                <a href="./pages/menu.html">Menu</a>
+              </li>
+              <li class="mobile-list-item"><a href="">Gallery</a></li>
+              <li class="mobile-list-item">
+                <a href="./pages/events.html">Events</a>
+              </li>
+              <li class="mobile-list-item">
+                <a href="./pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <!-- HERO SECTION -->
+
+        <section class="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h1 class="hero-title">
+                <span class="hero-subtitle">Welcome to</span>
+
+                <div class="logo-circle">
+                  <span class="hero-logo"
+                    >Ama <span class="hero-logo-bar">Bar</span></span
+                  >
+                </div>
+              </h1>
+              <div class="hero-description">
+                <span class="open-gallery" data-category="bar">Bar</span>
+                <span class="open-gallery" data-category="shisha">Shisha</span>
+                <span class="open-gallery" data-category="karaoke"
+                  >Karaoke</span
+                >
+                <span class="open-gallery" data-category="gaming"
+                  >Gaming console</span
                 >
               </div>
-            </h1>
-            <div class="hero-description">
-              <span>Bar</span>
-              <span>Shisha</span>
-              <span>Karaoke</span>
-              <span>Gaming console</span>
+              <!-- Swiper -->
             </div>
           </div>
-        </div>
 
-        <!-- OPENING HOURS ABSOLUTE -->
+          <!-- OPENING HOURS ABSOLUTE -->
 
-        <div class="opening-hours">
-          <div class="circle">
-            <h3>Opening Hours</h3>
-            <p><strong>Mon:</strong> Closed</p>
-            <p><strong>Tue–Thu:</strong> 17:00–01:00</p>
-            <p><strong>Fri–Sat:</strong> 17:00–03:00</p>
-            <p><strong>Sun:</strong> 17:00–01:00</p>
+          <div class="opening-hours">
+            <div class="circle">
+              <h3>Opening Hours</h3>
+              <p><strong>Mon:</strong> Closed</p>
+              <p><strong>Tue–Thu:</strong> 17:00–01:00</p>
+              <p><strong>Fri–Sat:</strong> 17:00–03:00</p>
+              <p><strong>Sun:</strong> 17:00–01:00</p>
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
 
-     <!-- FOOTER -->
-    <footer>
-      <div class="container footer-container">
-        <div class="address">
-          <div>
-            <img src="./images/address.svg" alt="address-svg" class="address-svg" />
+      <!-- FOOTER -->
+      <footer>
+        <div class="container footer-container">
+          <div class="address">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Sokolovská+116+71,Karlovy+Vary+36005"
+              target="_blank"
+              class="contact-address"
+            >
+              <img
+                src="./images/address.svg"
+                alt="address-svg"
+                class="address-svg"
+              />
+              <div>
+                <p>Sokolovská 116 / 71</p>
+                <p>Karlovy Vary 36005</p>
+              </div>
+            </a>
           </div>
-          <div>
-            <p>Sokolovská 116 / 71</p>
-            <p>Karlovy Vary 36005</p>
+          <div class="contact">
+            <div class="contact-phone">
+              <a href="tel:+420739866996" class="contact-phone">
+                <img
+                  src="./images/phone.svg"
+                  alt="phone-svg"
+                  class="phone-svg"
+                />
+                <span>+420 739 866 996</span>
+              </a>
+            </div>
+            <div class="contact-mail">
+              <a href="mailto:amabar.s.r.o@gmail.com" class="contact-mail">
+                <img src="./images/mail.svg" alt="mail-svg" class="mail-svg" />
+                <span>amabar.s.r.o@gmail.com</span>
+              </a>
+            </div>
           </div>
-        </div>
-        <div class="contact">
-          <div class="contact-phone">
-            <div>
-              <img src="./images/phone.svg" alt="phone-svg" class="phone-svg"/>
-            </div>
-            <div>
-              <a href="tel:+420739866996">+420 739 866 996</a>
-            </div>
-          </div>
-          <div class="contact-mail">
-            <div>
-              <img src="./images/mail.svg" alt="mail-svg" class="mail-svg"/>
-            </div>
-            <div>
-              <p>
-                <a href="mailto:amabar.s.r.o@gmail.com"
-                  >amabar.s.r.o@gmail.com</a
+          <div class="social-media">
+            <ul class="social-media-list">
+              <li class="social-list-item">
+                <a href="https://www.instagram.com/ama_bar_kv/" target="_blank">
+                  <img src="./images/insta.svg" alt="insta-icon" />
+                </a>
+              </li>
+              <li class="social-list-item">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
+                  target="_blank"
                 >
-              </p>
-            </div>
+                  <img src="./images/facebook.svg" alt="facebook-icon" />
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="social-media">
-          <ul class="social-media-list">
-            <li class="social-list-item">
-              <a href="https://www.instagram.com/ama_bar_kv/" target="_blank">
-                <img src="./images/insta.svg" alt="insta-icon" />
-              </a>
-            </li>
-            <li class="social-list-item">
-              <a
-                href="https://www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
-                target="_blank"
-              >
-                <img src="./images/facebook.svg" alt="facebook-icon" />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-  </div>
+      </footer>
+    </div>
     <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
   </body>
 </html>

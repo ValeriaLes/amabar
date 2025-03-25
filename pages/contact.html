@@ -76,14 +76,18 @@
                 <a href="../index.html">Home</a>
               </li>
               <li class="mobile-list-item">
-                <a href="./about.html" >About</a>
+                <a href="./about.html">About</a>
               </li>
               <li class="mobile-list-item">
                 <a href="./menu.html">Menu</a>
               </li>
               <li class="mobile-list-item"><a href="">Gallery</a></li>
-              <li class="mobile-list-item"><a href="./events.html">Events</a></li>
-              <li class="mobile-list-item"><a href="./contact.html" class="active-mobile">Contact</a></li>
+              <li class="mobile-list-item">
+                <a href="./events.html">Events</a>
+              </li>
+              <li class="mobile-list-item">
+                <a href="./contact.html" class="active-mobile">Contact</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -92,32 +96,37 @@
       <main>
         <section class="contact-section">
           <div class="container">
+            <!-- Opening Hours -->
+            <div class="opening-hours">
+              <div class="circle">
+                <h3>Opening Hours</h3>
+                <p><strong>Mon:</strong> Closed</p>
+                <p><strong>Tue–Thu:</strong> 17:00–01:00</p>
+                <p><strong>Fri–Sat:</strong> 17:00–03:00</p>
+                <p><strong>Sun:</strong> 17:00–01:00</p>
+              </div>
+            </div>
+
             <div class="contact-box">
               <div class="contact-phone-contact">
-                <div>
+                <a href="tel:+420739866996" class="contact-phone">
                   <img
                     src="../images/phone.svg"
                     alt="phone-svg"
-                    class="icon-phone"
+                    class="phone-svg"
                   />
-                </div>
-                <div>
-                  <a href="tel:+420739866996">+420 739 866 996</a>
-                </div>
+                  <span>+420 739 866 996</span>
+                </a>
               </div>
               <div class="contact-mail-contact">
-                <div>
+                <a href="mailto:amabar.s.r.o@gmail.com" class="contact-mail">
                   <img
                     src="../images/mail.svg"
                     alt="mail-svg"
-                    class="icon-mail"
+                    class="mail-svg"
                   />
-                </div>
-                <div>
-                  <a href="mailto:amabar.s.r.o@gmail.com"
-                    >amabar.s.r.o@gmail.com</a
-                  >
-                </div>
+                  <span>amabar.s.r.o@gmail.com</span>
+                </a>
               </div>
             </div>
             <div class="map-box">
@@ -137,34 +146,38 @@
       <footer>
         <div class="container footer-container">
           <div class="address">
-            <div>
-              <img src="../images/address.svg" alt="address-svg" />
-            </div>
-            <div>
-              <p>Sokolovská 116 / 71</p>
-              <p>Karlovy Vary 36005</p>
-            </div>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Sokolovská+116+71,Karlovy+Vary+36005"
+              target="_blank"
+              class="contact-address"
+            >
+              <img
+                src="../images/address.svg"
+                alt="address-svg"
+                class="address-svg"
+              />
+              <div>
+                <p>Sokolovská 116 / 71</p>
+                <p>Karlovy Vary 36005</p>
+              </div>
+            </a>
           </div>
           <div class="contact">
             <div class="contact-phone">
-              <div>
-                <img src="../images/phone.svg" alt="phone-svg" />
-              </div>
-              <div>
-                <a href="tel:+420739866996">+420 739 866 996</a>
-              </div>
+              <a href="tel:+420739866996" class="contact-phone">
+                <img
+                  src="../images/phone.svg"
+                  alt="phone-svg"
+                  class="phone-svg"
+                />
+                <span>+420 739 866 996</span>
+              </a>
             </div>
             <div class="contact-mail">
-              <div>
-                <img src="../images/mail.svg" alt="mail-svg" />
-              </div>
-              <div>
-                <p>
-                  <a href="mailto:amabar.s.r.o@gmail.com"
-                    >amabar.s.r.o@gmail.com</a
-                  >
-                </p>
-              </div>
+              <a href="mailto:amabar.s.r.o@gmail.com" class="contact-mail">
+                <img src="../images/mail.svg" alt="mail-svg" class="mail-svg" />
+                <span>amabar.s.r.o@gmail.com</span>
+              </a>
             </div>
           </div>
           <div class="social-media">
@@ -176,7 +189,7 @@
               </li>
               <li class="social-list-item">
                 <a
-                  href="www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
+                  href="https://www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
                   target="_blank"
                 >
                   <img src="../images/facebook.svg" alt="facebook-icon" />

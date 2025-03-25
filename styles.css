@@ -16,10 +16,10 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: url("./images/hero.sec.jpg");
+  background-image: url("./images/background.jpg");
   background-repeat: no-repeat;
-  background-position: 20% 0%;
-  background-size: auto;
+  background-position: center;
+  background-size: cover;
 
   top: 0;
   left: 0;
@@ -29,13 +29,16 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   max-width: 428px;
 
   background-repeat: no-repeat;
   z-index: -1;
   margin: 0 auto;
 }
+
+
+
 
 .about-background {
   color: white;
@@ -103,7 +106,7 @@ a {
 }
 
 .hero-content {
-  margin-top: 70px;
+  margin-top: 100px;
 }
 
 .hero-subtitle {
@@ -134,7 +137,7 @@ a {
 }
 
 .hero-logo {
-  font-size: 67px;
+  font-size: 73px;
   position: relative;
   -webkit-text-stroke: 2px white;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.7);
@@ -159,10 +162,11 @@ a {
 
   margin-top: 16px;
 
-  font-size: 16px;
+  font-size: 17px;
   text-transform: lowercase;
   font-style: italic;
   color: rgba(255, 255, 255);
+  text-shadow: 3px 3px 3px black;
 }
 
 .hero-description span::after {
@@ -174,10 +178,47 @@ a {
   content: "";
 }
 
+
+/* SWIPER HOME */
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8); /* Hintergrund abdunkeln */
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+
+
 /* ABOUT SECTION */
 
 .about-section {
-  padding-bottom: 50px;
+  padding-bottom: 60px;
 }
 
 .text {
@@ -216,7 +257,7 @@ a {
 
 .drinks-container {
   width: 100%;
-  margin-bottom: 20px;
+ 
 }
 
 .box {
@@ -235,14 +276,14 @@ a {
 
 .swiper {
   order: 1;
-  width: 160px;
-  height: 160px;
+  width: 300px;
+  height: 300px;
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   object-position: top;
 }
 
@@ -447,6 +488,12 @@ margin-bottom: 24px;
 .mail-svg {
   width: 17px;
   height: 17px;
+}
+
+.contact-address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .address,
