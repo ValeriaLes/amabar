@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AmaBar</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
 
     <link rel="stylesheet" href="./styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
-      rel="stylesheet"
-    />
+ 
   </head>
   <body>
     <div class="home-background">
@@ -124,7 +126,8 @@
                   >Gaming console</span
                 >
               </div>
-              <!-- Swiper -->
+            <!-- Light Box -->
+            <div id="gallery-container" style="display: none;"></div>
             </div>
           </div>
 
@@ -192,7 +195,9 @@
         </div>
       </footer>
     </div>
-    <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="./main.js"></script>
+   
   </body>
 </html>
