@@ -415,7 +415,7 @@ a {
 
 .star-badge {
   position: absolute;
-  top: -5px;
+  top: 18px;
   right: -46px;
   background: violet;
   border: 1px solid rgba(255, 0, 0, 1);

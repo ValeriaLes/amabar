@@ -125,10 +125,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Die Funktion, die die Galerie basierend auf der Kategorie öffnet
   function openGallery(category) {
     const galleryImages = {
-      bar: ["cocktail1.jpg", "cocktail2.jpg", "cocktail3.jpg","cocktail4.jpg","cocktail5.jpg","cocktail6.jpg","cocktail7.jpg","cocktail8.jpg", "cocktail9.jpg","cocktail10.jpg","cocktail11.jpg"],
-      shisha: ["shisha1.jpg", "shisha2.jpg", "shisha3.jpg", "shisha.jpg"],
+      bar: ["cocktail1.jpg", "cocktail2.jpg", "cocktail3.jpg","cocktail4.jpg","cocktail5.jpg","cocktail6.jpg","cocktail7.jpg","cocktail8.jpg", "cocktail9.jpg","cocktail10.jpg","cocktail11.jpg","cocktail12.jpg","cocktail13.jpg","cocktail14.jpg","cocktail16.jpg","cocktail17.jpg","cocktail19.jpg","cocktail-video.mp4","cocktail-video2.mp4"],
+      shisha: ["shisha1.jpg", "shisha2.jpg", "shisha3.jpg", "shisha.jpg", "shisha-video.mp4"],
       karaoke: ["karaoke4.jpg", "karaoke7.jpg", "karaoke8.jpg", "karaokevideo.mp4"],
-      gaming: ["gaming4.jpg", "gaming4.jpg", "gaming4.jpg"]
+      gaming: ["gaming.png", "gaming4.jpg"]
   };
 
   
