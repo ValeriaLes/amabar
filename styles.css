@@ -236,6 +236,7 @@ a {
 .gslide-image img {
   width: 90vw;
   height: 90vh;
+  object-fit: contain;
 }
 
 .glightbox-clean .gprev {
