@@ -18,7 +18,7 @@ body {
 
   background-image: url("./images/background.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
 
   top: 0;
@@ -37,7 +37,8 @@ body {
 }
 
 .gallery-bg {
-  background-color: black;
+  background: url("./images/IMG_9720.JPG") no-repeat;
+  background-size: cover;
 }
 
 .about-background {
@@ -368,12 +369,14 @@ a {
 
 .menu-item {
   width: 100%;
+ 
   margin-bottom: 20px;
   
 }
 
 .menu-item img {
   width: 100%;
+  max-width: 1200px;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
@@ -507,6 +510,16 @@ a {
 .karaoke-video video {
   border: 2px solid dodgerblue;
   border-bottom: none;
+}
+
+/* Google Maps Box */
+.map-box {
+  height: 200px;
+  width: 100%;
+  margin-top: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* FOOTER */
@@ -688,13 +701,7 @@ footer {
   font-size: 11px;
 }
 
-/* Google Maps Box */
-.map-box {
-  margin-top: 15px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+
 
 
 
@@ -919,7 +926,7 @@ footer {
 
   .video-wrapper {
     display: flex;
-    justify-content: space-around;
+    gap: 90px;
   }
 
   .text-bg {
@@ -957,6 +964,10 @@ footer {
   .mail-svg {
     width: 30px;
     height: 30px;
+  }
+
+  .map-box{
+    height: 400px;
   }
 
  
