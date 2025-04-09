@@ -39,6 +39,10 @@ body {
 .gallery-bg {
   background: url("./images/IMG_9720.JPG") no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 
 .about-background {
@@ -59,14 +63,11 @@ body {
   justify-content: space-between;
 }
 
-
-
 .event-bg {
   background: url("./images/IMG_9717.JPG") no-repeat;
   background-size: cover;
   min-height: 100vh;
-  display: flex
-;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -255,6 +256,59 @@ a {
   right: 0% !important;
 }
 
+/* THE REAL ABOUT SECTION */
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features-list li {
+  width: 250px;
+  height: 250px;
+  background-color: rgba(154, 161, 149, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  transition: transform 0.2s ease;
+}
+
+.features-list li:hover {
+  transform: scale(1.03);
+}
+
+.features-list li span {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 17px;
+  color:rgb(95 9 20)
+}
+
+.about-title {
+  font-style: italic;
+  color: #d72323;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+}
+
+.about-sect {
+  padding: 16px 0;
+}
 /* ABOUT SECTION */
 
 .about-section {
@@ -362,16 +416,15 @@ a {
 /* MENU-PAGE */
 .menu-container {
   width: 100%;
-  
+
   padding: 20px;
   box-sizing: border-box;
 }
 
 .menu-item {
   width: 100%;
- 
+
   margin-bottom: 20px;
-  
 }
 
 .menu-item img {
@@ -609,7 +662,6 @@ footer {
   display: block;
 }
 
-
 /* OPENING HOURS */
 
 .opening-hours {
@@ -646,7 +698,6 @@ footer {
 .opening-hours .circle p strong {
   color: white;
 }
-
 
 /* CONTACT SECTION */
 
@@ -701,10 +752,6 @@ footer {
   font-size: 11px;
 }
 
-
-
-
-
 .hero-title {
   flex-direction: column;
 }
@@ -727,7 +774,6 @@ footer {
     min-width: 768px;
     max-width: 768px;
     position: relative;
-   
   }
 
   .home-background {
@@ -742,8 +788,6 @@ footer {
     justify-content: space-between;
     min-height: 100vh;
   }
-
- 
 
   .mobile-menu-open {
     display: none;
@@ -933,19 +977,18 @@ footer {
     max-width: 300px;
   }
 
-  .opening-hours{
+  .opening-hours {
     width: 185px;
     height: 185px;
     left: 76%;
     top: 0%;
-    
   }
 
   .opening-hours h3 {
     font-size: 17px;
   }
 
-  .opening-hours p{
+  .opening-hours p {
     font-size: 13px;
   }
 
@@ -966,11 +1009,9 @@ footer {
     height: 30px;
   }
 
-  .map-box{
+  .map-box {
     height: 400px;
   }
-
- 
 }
 
 @media screen and (min-width: 1200px) {
@@ -1006,7 +1047,7 @@ footer {
   .hero-content {
     margin-top: 100px;
   }
-  
+
   .hero-description {
     font-size: 35px;
   }
@@ -1113,8 +1154,6 @@ footer {
       0 0 20px rgba(255, 255, 255, 0.4);
   }
 }
-
-
 
 /* MOBILE MENU  */
 
