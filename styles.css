@@ -50,7 +50,6 @@ body {
   background: url("./images/IMG_9724.JPG") no-repeat;
   background-size: cover;
   background-attachment: scroll;
-
   position: relative;
 }
 
@@ -93,10 +92,6 @@ a {
 }
 
 /* HEADER  */
-
-/* .header {
-  background: rgba(0, 0, 0, 0.3);
-} */
 
 .container {
   max-width: 428px;
@@ -153,7 +148,6 @@ a {
 }
 .hero-logo-bar {
   font-family: "Allura", cursive;
-  /* font-size: 100px; */
   position: absolute;
   font-style: italic;
   text-transform: lowercase;
@@ -199,7 +193,7 @@ a {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.8); /* Hintergrund abdunkeln */
+  background: rgba(0, 0, 0, 0.8);
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -227,7 +221,7 @@ a {
 /* GLightbox Video in voller Größe */
 .plyr__video-embed,
 .plyr__video-wrapper--fixed-ratio {
-  aspect-ratio: unset !important; /* oder einfach entfernen */
+  aspect-ratio: unset !important;
 }
 .plyr__video-wrapper {
   background: #000;
@@ -294,7 +288,7 @@ a {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 17px;
-  color:rgb(95 9 20)
+  color: rgb(95 9 20);
 }
 
 .about-title {
@@ -309,7 +303,7 @@ a {
 .about-sect {
   padding: 16px 0;
 }
-/* ABOUT SECTION */
+/* GALLERY SECTION  (vorher about-section) */
 
 .about-section {
   padding-bottom: 60px;
@@ -414,6 +408,7 @@ a {
 }
 
 /* MENU-PAGE */
+
 .menu-container {
   width: 100%;
 
@@ -444,8 +439,6 @@ a {
   color: #333;
 }
 
-/* Anpassung für kleinere Bildschirme */
-
 /* EVENT-SECTION */
 
 .event-section {
@@ -469,7 +462,6 @@ a {
   text-align: center;
   text-transform: uppercase;
 
-  /* 11-point starburst shape with longer spikes */
   clip-path: polygon(
     50% 0%,
     60% 20%,
@@ -544,9 +536,9 @@ a {
 
 .video-container video {
   max-width: 228px;
-  /* background-color: rgba(245, 245, 245, 0.8); */
+
   margin: 0 auto;
-  /* padding: 15px 10px 5px 10px;  */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -709,7 +701,6 @@ footer {
   padding-bottom: 15px;
 }
 
-/* Gelbe Kontakt-Box */
 .contact-box {
   display: flex;
 
@@ -721,7 +712,6 @@ footer {
   display: block;
 }
 
-/* Icons */
 .icon-mail {
   width: 25px;
   height: 24px;
@@ -731,12 +721,11 @@ footer {
   height: 20px;
 }
 
-/* Kontaktinformationen */
 .contact-phone-contact,
 .contact-mail-contact {
   padding: 12px;
   border-radius: 10px;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
   display: flex;
   align-items: center;
@@ -755,19 +744,6 @@ footer {
 .hero-title {
   flex-direction: column;
 }
-/* 
-.logo-circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  box-shadow: 0 0 5px rgba(255, 255, 255, 0.4),
-    0 0 10px rgba(255, 255, 255, 0.3);
-  animation: subtle-glow 3s infinite alternate ease-in-out;
-} */
 
 @media screen and (min-width: 768px) {
   .container {
@@ -871,10 +847,9 @@ footer {
 
   .text {
     order: 0;
-    /* background: rgba(255, 255, 255, 0.1); */
+
     padding: 20px;
-    /* border-radius: 10px; */
-    /* position: absolute; */
+
     width: 480px;
   }
 
@@ -887,19 +862,9 @@ footer {
   }
 
   .image-container {
-    /* display: flex;
-  flex-wrap: wrap; 
-  gap: 10px;  */
     width: 300px;
     margin-top: 50px;
-
-    /* justify-content: center;
-  position: relative;
-
-  background: rgba(15, 12, 12, 0.1); */
     padding: 15px;
-
-    /* border-radius: 10px; */
   }
 
   .drinks-container {
@@ -909,15 +874,9 @@ footer {
 
   .box {
     flex-direction: row;
-    /* display: flex;
-  align-items: center; */
-
-    /* background-color: rgba(0, 0, 0, 0.8); */
 
     padding: 20px;
 
-    /* border-radius: 10px; 
-  box-shadow: 0px 4px 15px rgba(248, 224, 89, 0.4);  */
     max-width: 100%;
     margin: 0 auto;
   }
@@ -929,35 +888,16 @@ footer {
     height: 200px;
   }
 
-  /* .swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-} */
-
   .title {
     font-size: 28px;
-    /* color: #f8e059 ; */
-    /* font-weight: 400;
-  text-transform: uppercase; */
+
     margin-bottom: 31px;
   }
 
   .container-box {
-    /* display: flex;
-  flex-direction: column; */
     gap: 40px;
     margin-top: 0;
   }
-
-  /* .swiper-button-next, .swiper-button-prev {
-  color: #FFD700 !important; 
-}
-
-
-.swiper-pagination-bullet-active, .swiper-pagination-bullet {
-  background-color: #FFD700 !important;
-} */
 
   .karaoke-badge {
     top: 52%;
