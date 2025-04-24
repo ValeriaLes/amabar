@@ -57,10 +57,10 @@ document.addEventListener("DOMContentLoaded", function () {
   
   function openGallery(category) {
     const galleryImages = {
-      bar: ["cocktail1.jpg", "cocktail2.jpg", "cocktail3.jpg","cocktail4.jpg","cocktail5.jpg","cocktail6.jpg","cocktail7.jpg","cocktail8.jpg", "cocktail9.jpg","cocktail10.jpg","cocktail11.jpg","cocktail12.jpg","cocktail13.jpg","cocktail14.jpg","cocktail16.jpg","cocktail17.jpg","cocktail19.jpg","cocktail-video.mp4","cocktail-video2.mp4"],
-      shisha: ["shisha1.jpg", "shisha2.jpg", "shisha3.jpg", "shisha.jpg", "shisha-video.mp4"],
-      karaoke: ["karaoke4.jpg", "karaoke7.jpg", "karaoke8.jpg", "karaokevideo.mp4"],
-      gaming: ["gaming.png", "gaming4.jpg"]
+      bar: ["cocktail1.webp", "cocktail2.webp", "cocktail3.webp","cocktail4.webp","cocktail5.webp","cocktail6.webp","cocktail7.webp","cocktail8.webp", "cocktail9.webp","cocktail10.webp","cocktail11.webp","cocktail12.webp","cocktail13.webp","cocktail14.webp","cocktail15.webp","cocktail16.webp","cocktail17.webp","cocktail18.webp","cocktail19.webp", "cocktail20.webp", "cocktail21.webp", "cocktail22.webp", "cocktail23.webp", "cocktail24.webp","cocktail25.webp", "cocktail26.webp", "cocktail27.webp","cocktail28.webp","cocktail29.webp","cocktail30.webp", "cocktail31.webp","cocktail32.webp","cocktail33.webp","cocktail34.webp","cocktail35.webp","cocktail36.webp","cocktail-video.mp4", "cocktail-video1.mp4","cocktail-video2.mp4","cocktail-video3.mp4","cocktail-video4.mp4"],
+      shisha: ["shisha.webp", "shisha1.webp", "shisha2.webp", "shisha3.webp", "shisha4.webp","shisha5.webp","shisha6.webp", "shisha-video1.MP4","shisha-video.mp4"],
+      karaoke: ["karaoke1.webp", "karaoke2.webp", "karaoke3.webp", "karaokevideo.mp4"],
+      gaming: ["gaming.webp","gaming1.webp","gaming2.webp", "gaming-video.mp4", "gaming-video1.MP4"]
   };
 
   

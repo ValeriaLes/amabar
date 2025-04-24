@@ -9,6 +9,7 @@ body {
   line-height: 1.5;
   margin: 0 auto;
   overflow-x: hidden;
+  user-select: none;
 }
 
 .home-background {
@@ -16,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: url("./images/background.jpg");
+  background-image: url("./images/home-bg.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -37,7 +38,7 @@ body {
 }
 
 .gallery-bg {
-  background: url("./images/IMG_9720.JPG") no-repeat;
+  background: url("./images/gallery-bg.webp") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -47,14 +48,14 @@ body {
 
 .about-background {
   color: white;
-  background: url("./images/IMG_9724.JPG") no-repeat;
+  background: url("./images/about-bg.webp") no-repeat;
   background-size: cover;
   background-attachment: scroll;
   position: relative;
 }
 
 .contact-bg {
-  background: url("./images/IMG_9728.JPG") no-repeat;
+  background: url("./images/contact-bg.webp") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -63,7 +64,7 @@ body {
 }
 
 .event-bg {
-  background: url("./images/IMG_9717.JPG") no-repeat;
+  background: url("./images/event-bg.webp") no-repeat;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -963,6 +964,8 @@ footer {
   .home-background {
     min-width: 1200px;
     max-width: none;
+    background-size: 37%;
+    background-color: black;
   }
 
   .nav {
