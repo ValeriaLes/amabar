@@ -659,8 +659,8 @@ footer {
 /* Impressum unten rechts platzieren */
 .impressum {
   position: absolute;
-  bottom: 5px;
-  right: 10px;
+  bottom: 0px;
+  right: 5px;
   z-index: 9999;
 }
 
