@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -17,7 +21,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
 
-  background-image: url("./images/home-bg.webp");
+  background-image: url("./images/background/home-bg.webp");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -38,7 +42,7 @@ body {
 }
 
 .gallery-bg {
-  background: url("./images/gallery-bg.webp") no-repeat;
+  background: url("./images/background/gallery-bg.webp") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -48,14 +52,14 @@ body {
 
 .about-background {
   color: white;
-  background: url("./images/about-bg.webp") no-repeat;
+  background: url("./images/background/about-bg.webp") no-repeat;
   background-size: cover;
   background-attachment: scroll;
   position: relative;
 }
 
 .contact-bg {
-  background: url("./images/contact-bg.webp") no-repeat;
+  background: url("./images/background/contact-bg.webp") no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -64,7 +68,7 @@ body {
 }
 
 .event-bg {
-  background: url("./images/event-bg.webp") no-repeat;
+  background: url("./images/background/event-bg.webp") no-repeat;
   background-size: cover;
   min-height: 100vh;
   display: flex;
@@ -73,7 +77,8 @@ body {
 }
 
 .menu-bg {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgb(18 18 16 / 90%)
+ 
 }
 
 .about-background::before {
@@ -396,6 +401,10 @@ a {
   color: #ffd700 !important;
 }
 
+
+
+
+
 .swiper-pagination-bullet-active,
 .swiper-pagination-bullet {
   background-color: #ffd700 !important;
@@ -406,39 +415,66 @@ a {
   .swiper-button-prev:after {
     font-size: 18px !important;
   }
+
 }
 
 /* MENU-PAGE */
 
-.menu-container {
-  width: 100%;
+.menu-container{
+  max-width: 428px;
+    padding: 0 16px;
+    margin: 0 auto;
+}
 
-  padding: 20px;
-  box-sizing: border-box;
+.menu-section {
+  padding-top: 45px;
 }
 
 .menu-item {
-  width: 100%;
+  display: flex;
+  flex-direction: row; /* Name links, Bild rechts */
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 8px;
+  margin: 8px auto;
+  /* border: 1px solid #767625; */
+  border-radius: 10px;
+  box-shadow: 1px 3px 10px rgba(248, 224, 89, 0.4);
+  max-width: 360px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: rgb(24 23 21 / 50%);
+}
 
-  margin-bottom: 20px;
+.menu-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(255, 248, 89, 0.4);
+}
+
+.menu-info h3 {
+  font-size: 0.8rem;
+  color: rgb(181, 177, 148);
+  margin: 0;
+  text-transform: uppercase;
+  
 }
 
 .menu-item img {
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
+  width: 80px;
+  height: 100px;
+  border-radius: 8px;
   object-fit: cover;
-  border-radius: 10px;
-  display: block;
-  margin: 0 auto;
+  flex-shrink: 0;
 }
 
-.menu-item .description {
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  color: #333;
+.menu-category h2 {
+      text-align: justify;
+    color: yellow;
+   
+    margin-left: 20px;
+    font-size: 1.1rem;
 }
+
+
 
 /* EVENT-SECTION */
 
@@ -860,8 +896,9 @@ footer {
   }
 
   .menu-container {
-    max-width: none;
-    margin: 0 auto;
+    min-width: 768px;
+        max-width: 768px;
+    
   }
 
   /* ABOUT SECTION */
@@ -977,6 +1014,33 @@ footer {
 
   .map-box {
     height: 400px;
+  }
+
+  /* MENU  */
+
+   .menu-category h2 {
+    font-size: 1.3rem; 
+    margin-bottom: 25px;
+    margin-left: 90px;
+  }
+
+  .menu-item {
+    max-width: 550px;      
+    padding: 14px 16px;     
+  }
+
+  .menu-info h3 {
+    font-size: 1.2rem;      
+  }
+
+  .menu-item img {
+    width: 100px;          
+    height: 100px;
+  }
+
+   .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 20px !important;
   }
 
 
@@ -1107,6 +1171,16 @@ footer {
 
   .text-bg {
     max-width: 350px;
+  }
+
+  /* MENU SECTION */
+
+  .menu-category h2 {
+    margin-left: 223px;
+  }
+
+  .menu-item{
+    max-width: 700px;
   }
 
   

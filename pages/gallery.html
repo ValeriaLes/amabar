@@ -1,356 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery</title>
-    <meta name="description" content="Take a look inside AMABAR – explore our photo gallery with highlights from karaoke nights, cocktails, and guests in Karlovy Vary.">
-    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery</title>
+  <meta name="description"
+    content="Take a look inside AMABAR – cocktails, shisha, karaoke and gaming moments." />
 
-    <link rel="stylesheet" href="../styles.css" />
-   
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+  <link rel="stylesheet" href="../styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+</head>
 
+<body>
+  <div class="about-background">
 
-  </head>
+    <!-- HEADER -->
+    <div id="header"></div>
 
- 
-    <body>
-    <div class="about-background">
+    <main>
+      <section class="about-section">
+        <div class="container">
+          <div class="container-box">
 
-      <!-- HEADER  -->
+            <!-- BAR -->
+            <div class="box">
+              <div class="swiper mySwiper" data-category="bar">
+                <div class="swiper-wrapper"></div>
 
-      <header class="page-header">
-        <div class="container header-container">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a href="../index.html" class="nav-list-item-link">Home</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./about.html" class="nav-list-item-link"
-                  >About</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a href="./menu.html" class="nav-list-item-link">Menu</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./gallery.html" class="nav-list-item-link active">Gallery</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./events.html" class="nav-list-item-link">Events</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./contact.html" class="nav-list-item-link">Contact</a>
-              </li>
-            </ul>
-          </nav>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
 
-          <!-- BURGER MENU -->
-          <button
-          type="button"
-          class="mobile-menu-open js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <img src="../images/burger-menu.svg" alt="mobile-menu-button" width="35" height="35" />
-        </button>
-        </div>
-  
-        <!-- MOBILE MENU -->
-  
-  
-        <div class="mobile-menu js-menu-container" id="mobile-menu">
-          <div class="mobile-container">
-            <button type="button" class="mobile-close-btn js-close-menu">
-              <img
-                src="../images/close-mobile-btn.svg"
-                alt="close-menu-button"
-                class="close-menu-svg"
-              />
-            </button>
-            <ul class="mobile-list list">
-              <li class="mobile-list-item">
-                <a href="../index.html">Home</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./about.html" >About</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./menu.html">Menu</a>
-              </li>
-              <li class="mobile-list-item active-mobile"><a href="./gallery.html">Gallery</a></li>
-              <li class="mobile-list-item"><a href="./events.html">Events</a></li>
-              <li class="mobile-list-item"><a href="./contact.html">Contact</a></li>
-            </ul>
+              <div class="drinks-container">
+                <h3 class="title">Drinks</h3>
+                <p>Exclusive signature cocktails you won’t find anywhere else.</p>
+              </div>
+            </div>
+
+            <!-- SHISHA -->
+            <div class="box">
+              <div class="drinks-container">
+                <h3 class="title">Shisha</h3>
+                <p>Smooth, flavorful shisha crafted for relaxation.</p>
+              </div>
+
+              <div class="swiper mySwiper" data-category="shisha">
+                <div class="swiper-wrapper"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <!-- KARAOKE -->
+            <div class="box">
+              <div class="swiper mySwiper" data-category="karaoke">
+                <div class="swiper-wrapper"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <div class="drinks-container">
+                <h3 class="title">Karaoke</h3>
+                <p>Sing your heart out with top hits.</p>
+              </div>
+            </div>
+
+            <!-- GAMING -->
+            <div class="box">
+              <div class="drinks-container">
+                <h3 class="title">Gaming console</h3>
+                <p>Play, compete, and immerse yourself.</p>
+              </div>
+
+              <div class="swiper mySwiper" data-category="gaming">
+                <div class="swiper-wrapper"></div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
           </div>
         </div>
-      </header>
-    
-      <!-- GALLERY SECTION -->
-  
-     <main>
-     <section class="about-section">
-      <div class="container">
-        <div class="container-box">
-          <div class="box">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../images/cocktail9.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail1.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail2.webp" alt="Drinks" />
-                </div>
-               
-                <div class="swiper-slide">
-                  <img src="../images/cocktail3.webp" alt="Drinks" />
-                </div>
-          
-                <div class="swiper-slide">
-                  <img src="../images/cocktail4.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail5.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail6.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail7.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail8.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail9.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail10.webp" alt="Drinks" />
-                </div>
-             
-                <div class="swiper-slide">
-                  <img src="../images/cocktail11.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail12.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail13.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail14.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail15.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail16.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail17.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail18.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/cocktail19.webp" alt="Drinks" />
-                </div>
-              </div>
-  
-              <!-- Navigation buttons -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-  
-              <!-- Pagination (optional) -->
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="drinks-container">
-              <h3 class="title">Drinks</h3>
-              <p>
-                Enjoy <span>exclusive signature</span> cocktails you won’t find
-                anywhere else!
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="drinks-container">
-              <h3 class="title">Shisha</h3>
-              <p>
-                Smooth, flavorful shisha crafted for pure relaxation and enjoyment.
-              </p>
-            </div>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../images/shisha.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/shisha1.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/shisha2.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/shisha3.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/shisha4.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/shisha5.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/shisha6.webp" alt="Drinks" />
-                </div>
-              </div>
-  
-              <!-- Navigation buttons -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-  
-              <!-- Pagination (optional) -->
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="box">
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../images/karaoke1.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/karaoke2.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/karaoke3.webp" alt="Drinks" />
-                </div>
-              </div>
-  
-              <!-- Navigation buttons -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-  
-              <!-- Pagination (optional) -->
-              <div class="swiper-pagination"></div>
-            </div>
-            <div class="drinks-container">
-              <h3 class="title">Karaoke</h3>
-              <p>
-                Sing your heart out with top hits and endless fun!
-              </p>
-            </div>
-          </div>
-          <div class="box">
-            <div class="drinks-container">
-              <h3 class="title">Gaming console</h3>
-              <p>
-                Play, compete, and immerse yourself in epic gaming action!
-              </p>
-            </div>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="../images/gaming.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/gaming1.webp" alt="Drinks" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="../images/gaming2.webp" alt="Drinks" />
-                </div>
-                
-              </div>
-  
-              <!-- Navigation buttons -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-  
-              <!-- Pagination (optional) -->
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
+      </section>
+    </main>
 
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </div>
 
-
-        </div>
-     </section>
-     </main>
-  
-        <!-- FOOTER -->
-        <footer>
-          <div class="container footer-container">
-            <div class="address">
-              <a
-                href="https://www.google.com/maps/search/?api=1&query=Sokolovská+116+71,Karlovy+Vary+36005"
-                target="_blank"
-                class="contact-address"
-              >
-                <img
-                  src="../images/address.svg"
-                  alt="address-svg"
-                  class="address-svg"
-                />
-                <div>
-                  <p>Sokolovská 116 / 71</p>
-                  <p>Karlovy Vary 36005</p>
-                </div>
-              </a>
-            </div>
-            <div class="contact">
-              <div class="contact-phone">
-                <a href="tel:+420739866996" class="contact-phone">
-                  <img
-                    src="../images/phone.svg"
-                    alt="phone-svg"
-                    class="phone-svg"
-                  />
-                  <span>+420 739 866 996</span>
-                </a>
-              </div>
-              <div class="contact-mail">
-                <a href="mailto:amabar.s.r.o@gmail.com" class="contact-mail">
-                  <img src="../images/mail.svg" alt="mail-svg" class="mail-svg" />
-                  <span>amabar.s.r.o@gmail.com</span>
-                </a>
-              </div>
-            </div>
-            <div class="social-media">
-              <ul class="social-media-list">
-                <li class="social-list-item">
-                  <a href="https://www.instagram.com/ama_bar_kv/" target="_blank">
-                    <img src="../images/insta.svg" alt="insta-icon" />
-                  </a>
-                </li>
-                <li class="social-list-item">
-                  <a
-                    href="https://www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
-                    target="_blank"
-                  >
-                    <img src="../images/facebook.svg" alt="facebook-icon" />
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-        
-        </footer>
-      </div>
-    </div>
-    <script src="../main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    </body>
-  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+  <script src="../js/main.js" defer></script>
+  <script src="../js/gallery.js" defer></script>
+</body>
 </html>

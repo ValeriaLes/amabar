@@ -1,100 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <meta name="description" content="Discover the story behind AMABAR – the modern karaoke bar and bar and disco in Karlovy Vary. Music, drinks, and unforgettable nights since 2024.">
+    <meta
+      name="description"
+      content="Discover the story behind AMABAR – the modern karaoke bar and bar and disco in Karlovy Vary. Music, drinks, and unforgettable nights since 2024."
+    />
     <link rel="stylesheet" href="../styles.css" />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
   </head>
   <body>
     <div class="gallery-bg">
-      <header class="page-header">
-        <div class="container header-container">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a href="../index.html" class="nav-list-item-link">Home</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./about.html" class="nav-list-item-link active"
-                  >About</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a href="./menu.html" class="nav-list-item-link">Menu</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./gallery.html" class="nav-list-item-link">Gallery</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./events.html" class="nav-list-item-link">Events</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./contact.html" class="nav-list-item-link">Contact</a>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- BURGER MENU -->
-          <button
-            type="button"
-            class="mobile-menu-open js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <img
-              src="../images/burger-menu.svg"
-              alt="mobile-menu-button"
-              width="35"
-              height="35"
-            />
-          </button>
-        </div>
-
-        <!-- MOBILE MENU -->
-
-        <div class="mobile-menu js-menu-container" id="mobile-menu">
-          <div class="mobile-container">
-            <button type="button" class="mobile-close-btn js-close-menu">
-              <img
-                src="../images/close-mobile-btn.svg"
-                alt="close-menu-button"
-                class="close-menu-svg"
-              />
-            </button>
-            <ul class="mobile-list list">
-              <li class="mobile-list-item">
-                <a href="../index.html">Home</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./about.html" class="active-mobile">About</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./menu.html">Menu</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./gallery.html">Gallery</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./events.html">Events</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
+      <!--  HEADER-->
+      <div id="header"></div>
+      <!-- ABOUT SECTION -->
       <main>
         <section class="about-sect">
           <div class="container">
@@ -138,66 +58,11 @@
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container footer-container">
-          <div class="address">
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Sokolovská+116+71,Karlovy+Vary+36005"
-              target="_blank"
-              class="contact-address"
-            >
-              <img
-                src="../images/address.svg"
-                alt="address-svg"
-                class="address-svg"
-              />
-              <div>
-                <p>Sokolovská 116 / 71</p>
-                <p>Karlovy Vary 36005</p>
-              </div>
-            </a>
-          </div>
-          <div class="contact">
-            <div class="contact-phone">
-              <a href="tel:+420739866996" class="contact-phone">
-                <img
-                  src="../images/phone.svg"
-                  alt="phone-svg"
-                  class="phone-svg"
-                />
-                <span>+420 739 866 996</span>
-              </a>
-            </div>
-            <div class="contact-mail">
-              <a href="mailto:amabar.s.r.o@gmail.com" class="contact-mail">
-                <img src="../images/mail.svg" alt="mail-svg" class="mail-svg" />
-                <span>amabar.s.r.o@gmail.com</span>
-              </a>
-            </div>
-          </div>
-          <div class="social-media">
-            <ul class="social-media-list">
-              <li class="social-list-item">
-                <a href="https://www.instagram.com/ama_bar_kv/" target="_blank">
-                  <img src="../images/insta.svg" alt="insta-icon" />
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
-                  target="_blank"
-                >
-                  <img src="../images/facebook.svg" alt="facebook-icon" />
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      
-      </footer>
+
+      <!-- FOOTER -->
+      <div id="footer"></div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="../main.js"></script>
-   
+
+    <script src="../js/main.js" defer ></script>
   </body>
 </html>

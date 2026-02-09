@@ -1,11 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bar in Karlovy Vary with Karaoke, Shisha & Cocktails | AMABAR</title>
-    <meta name="description" content="Modern karaoke bar and cocktail bar in Karlovy Vary. Music, cocktails, disco and unforgettable nights at AMABAR.">
-    <script type="application/ld+json">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bar in Karlovy Vary with Karaoke, Shisha & Cocktails | AMABAR</title>
+  <meta name="description"
+    content="Modern karaoke bar and cocktail bar in Karlovy Vary. Music, cocktails, disco and unforgettable nights at AMABAR." />
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BarOrPub",
@@ -21,209 +23,52 @@
         "telephone": "+420739866996",
         "url": "https://www.amabar.cz"
       }
-      </script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
+    </script>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Allura&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
-    <link rel="stylesheet" href="./styles.css" />
-    <link rel="canonical" href="https://www.amabar.cz/">
-  </head>
-  <body>
-    <div class="home-background">
-      <!-- HEADER  -->
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="canonical" href="https://www.amabar.cz/" />
+</head>
 
-      <header class="header">
-        <div class="container header-container">
-          <nav class="nav">
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a href="./index.html" class="nav-list-item-link active"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a href="./pages/about.html" class="nav-list-item-link"
-                  >About</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a href="./pages/menu.html" class="nav-list-item-link">Menu</a>
-              </li>
-              <li class="nav-list-item">
-                <a href="./pages/gallery.html" class="nav-list-item-link"
-                  >Gallery</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a href="./pages/events.html" class="nav-list-item-link"
-                  >Events</a
-                >
-              </li>
-              <li class="nav-list-item">
-                <a href="./pages/contact.html" class="nav-list-item-link"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </nav>
+<body>
+  <div class="home-background">
+    <!-- HEADER  -->
 
-          <!-- BURGER BUTTON  -->
-          <button
-            type="button"
-            class="mobile-menu-open js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <img
-              src="./images/burger-menu.svg"
-              alt="mobile-menu-button"
-              width="35"
-              height="35"
-            />
-          </button>
-        </div>
+    <div id="header"></div>
 
-        <!-- MOBILE MENU  -->
+    <!-- HERO SECTION -->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="hero-title">
+              <span class="hero-subtitle">Welcome to</span>
 
-        <div class="mobile-menu js-menu-container" id="mobile-menu">
-          <div class="mobile-container">
-            <button type="button" class="mobile-close-btn js-close-menu">
-              <img
-                src="./images/close-mobile-btn.svg"
-                alt="close-menu-button"
-                class="close-menu-svg"
-              />
-            </button>
-            <ul class="mobile-list list">
-              <li class="mobile-list-item">
-                <a href="./index.html" class="active-mobile">Home</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./pages/about.html">About</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./pages/menu.html">Menu</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./pages/gallery.html">Gallery</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./pages/events.html">Events</a>
-              </li>
-              <li class="mobile-list-item">
-                <a href="./pages/contact.html">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <main>
-        <!-- HERO SECTION -->
-
-        <section class="hero">
-          <div class="container">
-            <div class="hero-content">
-              <h1 class="hero-title">
-                <span class="hero-subtitle">Welcome to</span>
-
-                <div class="logo-circle">
-                  <span class="hero-logo"
-                    >Ama <span class="hero-logo-bar">Bar</span></span
-                  >
-                </div>
-              </h1>
-              <div class="hero-description">
-                <span class="open-gallery" data-category="bar">Bar</span>
-                <span class="open-gallery" data-category="shisha">Shisha</span>
-                <span class="open-gallery" data-category="karaoke"
-                  >Karaoke</span
-                >
-                <span class="open-gallery" data-category="gaming"
-                  >Gaming console</span
-                >
+              <div class="logo-circle">
+                <span class="hero-logo">Ama <span class="hero-logo-bar">Bar</span></span>
               </div>
-              <!-- Light Box -->
-              <div id="gallery-container" style="display: none"></div>
+            </h1>
+            <div class="hero-description">
+              <span class="open-gallery" data-category="bar">Bar</span>
+              <span class="open-gallery" data-category="shisha">Shisha</span>
+              <span class="open-gallery" data-category="karaoke">Karaoke</span>
+              <span class="open-gallery" data-category="gaming">Gaming console</span>
             </div>
+            <!-- LIGHT BOX -->
+            <div id="gallery-container" style="display: none"></div>
           </div>
-        </section>
-      </main>
-
-      <!-- FOOTER -->
-      <footer>
-        <div class="container footer-container">
-          <div class="address">
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=Sokolovská+116+71,Karlovy+Vary+36005"
-              target="_blank"
-              class="contact-address"
-            >
-              <img
-                src="./images/address.svg"
-                alt="address-svg"
-                class="address-svg"
-              />
-              <div>
-                <p>Sokolovská 116 / 71</p>
-                <p>Karlovy Vary 36005</p>
-              </div>
-            </a>
-          </div>
-          <div class="contact">
-            <div class="contact-phone">
-              <a href="tel:+420739866996" class="contact-phone">
-                <img
-                  src="./images/phone.svg"
-                  alt="phone-svg"
-                  class="phone-svg"
-                />
-                <span>+420 739 866 996</span>
-              </a>
-            </div>
-            <div class="contact-mail">
-              <a href="mailto:amabar.s.r.o@gmail.com" class="contact-mail">
-                <img src="./images/mail.svg" alt="mail-svg" class="mail-svg" />
-                <span>amabar.s.r.o@gmail.com</span>
-              </a>
-            </div>
-          </div>
-          <div class="social-media">
-            <ul class="social-media-list">
-              <li class="social-list-item">
-                <a href="https://www.instagram.com/ama_bar_kv/" target="_blank">
-                  <img src="./images/insta.svg" alt="insta-icon" />
-                </a>
-              </li>
-              <li class="social-list-item">
-                <a
-                  href="https://www.facebook.com/profile.php?id=61570086643830&mibextid=LQQJ4d"
-                  target="_blank"
-                >
-                  <img src="./images/facebook.svg" alt="facebook-icon" />
-                </a>
-              </li>
-            
-            </ul>
-            
-          </div>
-         
         </div>
+      </section>
+    </main>
 
-      </footer>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
-    <script src="./main.js"></script>
-  </body>
+    <!-- FOOTER -->
+    <div id="footer"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/index.js" defer></script>
+</body>
+
 </html>

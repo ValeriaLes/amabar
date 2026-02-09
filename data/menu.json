@@ -1,0 +1,18 @@
+[
+  { "name": "Ama", "image": "/images/menu/ama.webp" },
+  { "name": "Ama2.0", "image": "/images/menu/ama2.webp" },
+  { "name": "Amazon", "image": "/images/menu/amazon.webp" },
+  { "name": "Aperol", "image": "/images/menu/aperol.webp" },
+  { "name": "Blue Lady", "image": "/images/menu/bluelady.webp" },
+  { "name": "Green fairy", "image": "/images/menu/greenfairy.webp" },
+  { "name": "Mai Tai", "image": "/images/menu/maitai.webp" },
+  { "name": "Long Island", "image": "/images/menu/longisland.webp" },
+  { "name": "Matador", "image": "/images/menu/matador.webp" },
+  { "name": "Mojito", "image": "/images/menu/mojito.webp" },
+  { "name": "Pina Colada", "image": "/images/menu/pinacolada.webp" },
+  { "name": "Pornstar Martini", "image": "/images/menu/pornstar.webp" },
+  { "name": "Sex on the beach", "image": "/images/menu/sexon.webp" },
+  { "name": "Singapore Sling", "image": "/images/menu/singapore.webp" },
+  { "name": "White Ukrainian", "image": "/images/menu/whiteua.webp" },
+  { "name": "Secret", "image": "/images/menu/secret.webp" }
+]
